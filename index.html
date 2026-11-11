@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تقرير إداري — سري</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    max-width: 520px;
+    width: 100%;
+    padding: 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
+  .badge {
+    display: inline-block;
+    background: #da3633;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+  }
+  h1 { font-size: 20px; margin-bottom: 6px; color: #f0f6fc; }
+  .sub { font-size: 12px; color: #8b949e; margin-bottom: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 10px 8px; text-align: right; border-bottom: 1px solid #21262d; }
+  th { color: #8b949e; font-weight: 600; font-size: 12px; }
+  .high { color: #f85149; font-weight: bold; }
+  .mid { color: #d29922; }
+  .low { color: #3fb950; }
+  .note {
+    margin-top: 18px;
+    font-size: 11px;
+    color: #6e7681;
+    line-height: 1.7;
+    border-top: 1px solid #21262d;
+    padding-top: 14px;
+  }
+  .btn {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    background: #238636;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+  }
+  .btn:hover { background: #2ea043; }
+  .reveal {
+    display: none;
+    margin-top: 16px;
+    padding: 16px;
+    background: #1c2128;
+    border: 1px dashed #d29922;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+    color: #e3b341;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="badge">سري — للاطلاع فقط</span>
+  <h1>تقرير سلوك الجروب الأسبوعي</h1>
+  <div class="sub">المجموعة: زملاء الكلية — الفترة: 7 أيام</div>
+
+  <table>
+    <tr><th>العضو</th><th>رسائل</th><th>محذوفة</th><th>النسبة</th></tr>
+    <tr><td>عضو #1</td><td>42</td><td>38</td><td class="high">90.5%</td></tr>
+    <tr><td>عضو #2</td><td>27</td><td>19</td><td class="high">70.4%</td></tr>
+    <tr><td>عضو #3</td><td>15</td><td>4</td><td class="mid">26.7%</td></tr>
+    <tr><td>عضو #4</td><td>8</td><td>1</td><td class="low">12.5%</td></tr>
+  </table>
+
+  <div class="note">
+    ملاحظة تقنية: النسب محسوبة وفق IEEE 754 بدقة مضاعفة.
+    الرسائل المحذوفة تُحتسب بعد اكتمال دورة الحذف (Δt ≤ 60s).
+    هذا التقرير لأغراض أكاديمية فقط.
+  </div>
+
+  <button class="btn" onclick="document.getElementById('rev').style.display='block'; this.style.display='none';">
+    اضغط لعرض التصنيف النهائي
+  </button>
+
+  <div class="reveal" id="rev">
+    🎉 أمزح عليك!<br>
+    لا يوجد تقرير، ولا تتبع، ولا بصمات.<br>
+    لكن... توقف عن إرسال الرسائل ومسحها، صارت مزعجة 😄<br>
+    <span style="font-size:11px; color:#8b949e;">— من إدارة الجروب</span>
+  </div>
+</div>
+</body>
+                                               </html>

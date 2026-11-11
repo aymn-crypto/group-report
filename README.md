@@ -1,2 +1,0 @@
-# group-report
-Public
